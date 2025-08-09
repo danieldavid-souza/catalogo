@@ -14,7 +14,7 @@ const filtroBusca = document.getElementById("filtro-busca");
 let todosProdutos = [];
 
 /* 🔄 Carrega os produtos do arquivo JSON */
-fetch("../js/produtos.json")
+fetch("./js/produtos.json")
   .then(res => res.json())
   .then(produtos => {
     todosProdutos = produtos;
