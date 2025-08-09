@@ -1,5 +1,5 @@
 // 📦 Carrega o menu.html e insere no DOM
-fetch("../pages/menu.html")
+fetch("menu.html")
   .then(response => response.text())
   .then(html => {
     document.getElementById("menu-container").innerHTML = html;
