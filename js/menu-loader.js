@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const paginaAtual = window.location.pathname.split("/").pop().replace(".html", "");
 
   // 📦 Carrega o conteúdo do menu externo
-  fetch("./menu.html")
+  fetch("menu.html")
     .then(res => res.text())
     .then(html => {
       container.innerHTML = html; // Insere o HTML do menu no container
