@@ -29,19 +29,19 @@ function selecionarIconeLocal(frase) {
   frase = frase.toLowerCase();
 
   if (frase.includes("chuva")) {
-    return "../assets/clima/chuva2.png";
+    return "./assets/clima/chuva2.png";
   } else if (frase.includes("nublado") || frase.includes("nuvem")) {
-    return "../assets/clima/nublado4.png";
+    return "./assets/clima/nublado4.png";
   } else if (frase.includes("sol") || frase.includes("ensolarado") || frase.includes("claro")) {
-    return "../assets/clima/sol.png";
+    return "./assets/clima/sol.png";
   } else if (frase.includes("neve")) {
-    return "../assets/clima/neve.png";
+    return "./assets/clima/neve.png";
   } else if (frase.includes("tempestade") || frase.includes("trovoada")) {
-    return "../assets/clima/tempestade.png";
+    return "./assets/clima/tempestade.png";
   } else if (frase.includes("vento")) {
-    return "../assets/clima/vento.png";
+    return "./assets/clima/vento.png";
   } else {
-    return "../assets/clima/estavel.png"; // ícone padrão para condições não mapeadas
+    return "./assets/clima/estavel.png"; // ícone padrão para condições não mapeadas
   }
 }
 
