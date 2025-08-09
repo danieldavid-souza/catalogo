@@ -19,7 +19,7 @@ let imagens = [];       // imagens para o lightbox
 let imagemAtual = 0;    // índice da imagem atual no lightbox
 
 // 🔄 Carrega os produtos do arquivo JSON
-fetch("../js/produtos.json")
+fetch("./js/produtos.json")
   .then(res => res.json())
   .then(produtos => {
     todosProdutos = produtos;
