@@ -9,7 +9,7 @@ let imagemAtual = 0;
 const numeroWhatsApp = "5532991657472";
 
 // 📦 Busca os dados dos produtos a partir do arquivo JSON
-fetch("../js/produtos.json")
+fetch("./js/produtos.json")
   .then(res => res.json())
   .then(produtos => {
     produtos.forEach((produto, index) => {
@@ -34,7 +34,7 @@ fetch("../js/produtos.json")
         <!-- Botão do WhatsApp com ícone e mensagem dinâmica -->
         <a href="${urlWhatsApp}" class="whatsapp-btn" target="_blank">
           <div class="whatsapp-content">
-            <img src="../assets/icones/whatsapp.png" alt="WhatsApp" />
+            <img src="./assets/icones/whatsapp.png" alt="WhatsApp" />
             <span>Fale no WhatsApp</span>
           </div>
         </a>
