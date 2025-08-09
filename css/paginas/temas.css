@@ -1,0 +1,329 @@
+/* ============================================
+   📄 TEMAS.CSS – Estilos da página Temas
+   Compatível com temas.html
+   ============================================ */
+
+/* 🔧 Estilo base da página de temas */
+.pagina-temas {
+  background-color: var(--cor-fundo, #ffffff); /* fundo adaptável ao tema */
+  color: var(--cor-texto, #000000); /* cor do texto adaptável ao tema */
+  font-family: var(--fonte-padrao, sans-serif); /* fonte padrão */
+  transition: background-color 0.3s ease, color 0.3s ease; /* transição suave entre temas */
+}
+
+/* 🧭 Cabeçalho da página */
+.cabecalho {
+  background-color: var(--cor-destaque, #f5f5f5); /* fundo do cabeçalho */
+  padding: 20px 0;
+  border-bottom: 1px solid var(--cor-borda, #ddd); /* borda inferior */
+}
+
+/* 🔹 Logo do cabeçalho */
+.logo {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* 🔹 Lista de navegação */
+.menu-lista {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+/* 🔹 Links do menu */
+.menu-lista a {
+  text-decoration: none;
+  color: var(--cor-link, #0077cc); /* cor do link */
+  font-weight: bold;
+}
+
+/* 🔹 Hover nos links */
+.menu-lista a:hover {
+  color: var(--cor-link-hover, #005fa3); /* cor ao passar o mouse */
+}
+
+/* ⚙️ Painel de configurações */
+.painel-config {
+  background-color: var(--cor-destaque, #f9f9f9); /* fundo do painel */
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* sombra leve */
+}
+
+/* 🔹 Título do painel */
+.painel-config h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* 🔹 Item de configuração */
+.config-item {
+  margin-bottom: 20px;
+}
+
+/* 🔹 Campos de seleção de fonte */
+.seletor-fonte select,
+.seletor-fonte input {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 🎨 Seção de seleção de temas */
+.seletor-tema {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 🔹 Título da seção de temas */
+.seletor-tema h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Descrição da seção */
+.seletor-tema p {
+  font-size: 1rem;
+  color: var(--cor-texto-secundario, #666); /* cor secundária */
+}
+
+/* 🧩 Alinhamento do label com o seletor de fonte */
+.seletor-fonte {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Label do seletor */
+.seletor-fonte label {
+  margin: 0;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* 🔹 Estilo do select */
+.seletor-fonte select {
+  padding: 8px;
+  font-size: 1rem;
+  height: 40px;
+}
+
+/* 🍔 Botão hamburguer para mobile */
+.hamburguer-tema {
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: var(--cor-link, #0077cc);
+  color: #0c0c0c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔹 Hover no botão hamburguer */
+.hamburguer-tema:hover {
+  background-color: #005fa3;
+}
+
+/* 🎨 Painel com opções de temas */
+.painel-temas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* 🔘 Botões de tema */
+.preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: 2px solid var(--cor-borda, #ccc);
+  background-color: var(--cor-destaque, #f0f0f0);
+  color: var(--cor-texto, #333);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* 🔘 Hover nos botões de tema */
+.preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: var(--cor-link-hover, #0077cc);
+}
+
+/* 🔄 Botão de redefinir tema */
+.tema-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--cor-link, #0077cc);
+  color: #131313;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔄 Hover no botão de redefinir */
+.tema-btn:hover {
+  background-color: #005fa3;
+}
+
+/* 🔹 Ícone de reset */
+.icon-reset {
+  margin-right: 8px;
+}
+
+/* 🔔 Área de notificação */
+.notificacao-tema {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--cor-link, #0077cc);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+}
+
+/* 🔔 Notificação visível */
+.notificacao-tema.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 🖼️ Área de visualização dinâmica */
+#preview {
+  margin-top: 40px;
+  min-height: 200px;
+  border: 2px dashed var(--cor-borda, #ccc);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--cor-destaque, #fafafa);
+}
+
+/* 🧾 Rodapé */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--cor-destaque, #f5f5f5);
+  color: var(--cor-texto-secundario, #666);
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* 🔁 Painel de temas duplicado (possivelmente para compatibilidade) */
+.painel-temas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* 🍔 Botão hamburguer alternativo */
+.hamburguer-tema {
+  display: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 🔒 Painel oculto por padrão */
+#painel-temas {
+  /*display: none;*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* ✅ Painel visível quando ativo */
+#painel-temas.ativo {
+  display: flex;
+}
+
+/* 🎨 Botões de tema no painel */
+#painel-temas .preview {
+  flex: 0 0 calc(50% - 10px); /* dois por linha */
+  max-width: 160px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+/* 🖱️ Efeito hover nos botões */
+#painel-temas .preview:hover {
+  transform: scale(1.05);
+}
+
+/* 🔄 Botão de redefinir no painel */
+#painel-temas .tema-btn {
+  flex: 0 0 calc(50% - 10px); /* ocupa metade da linha com espaçamento */
+  max-width: 160px;
+  margin: 10px auto 0 auto; /* centraliza o botão */
+  text-align: center;
+  display: block;
+}
+
+/* ============================================
+   📱 Responsividade – Ajustes para diferentes telas
+   ============================================ */
+
+/* 🔒 Oculta o botão hamburguer em telas grandes */
+@media (min-width: 769px) {
+  .hamburguer-tema {
+    display: none; /* botão só aparece em telas menores */
+  }
+
+  .painel-temas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* 📱 Em telas pequenas, oculta o painel por padrão */
+@media (max-width: 768px) {
+  .painel-temas {
+    display: none; /* painel escondido inicialmente */
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .painel-temas.ativo {
+    display: flex; /* painel visível quando ativo */
+  }
+
+  .hamburguer-tema {
+    display: inline-block; /* botão visível em telas pequenas */
+    margin-bottom: 1rem;
+  }
+}

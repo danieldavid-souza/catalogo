@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 🧠 Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós</title>
+
+  <!-- 🎨 Estilos organizados por módulos -->
+  <link rel="stylesheet" href="../css/base/core.css" />           <!-- Estilos essenciais -->
+  <link rel="stylesheet" href="../css/base/theme.css" />          <!-- Temas visuais -->
+  <link rel="stylesheet" href="../css/base/temas.css" />          <!-- Estilos específicos de temas -->
+  <link rel="stylesheet" href="../css/base/layout.css" />         <!-- Layout geral -->
+  <link rel="stylesheet" href="../css/base/menu.css" />           <!-- Estilo do menu -->
+  <link rel="stylesheet" href="../css/base/fontes.css" />         <!-- Tipografia -->
+  <link rel="stylesheet" href="../css/paginas/sobre.css" />       <!-- Estilo específico da página Sobre -->
+</head>
+
+<!-- 🧩 Aplica o tema visual padrão -->
+<body class="tema-claro">
+
+  <!-- 🔝 Cabeçalho com título e menu dinâmico -->
+  <header class="catalogo-header">
+    <div class="topo-container">
+      <h1 class="logo">🛍️ Catálogo Online - Página Sobre</h1>
+      <div id="menu-container"></div> <!-- Menu será carregado via JS -->
+    </div>
+  </header>
+
+  <!-- 📖 Conteúdo principal da página institucional -->
+  <section class="sobre">
+    <main class="container">
+
+      <!-- ✨ Introdução à marca -->
+      <section>
+        <h2>💖 Sobre a Lima Calixto</h2>
+        <p>Conheça nossa história, missão e valores.</p>
+      </section>
+
+      <!-- 💬 Slogan e propósito -->
+      <section class="slogan">
+        <div class="logo-superior">
+          <h3>Afeto impresso em cada criação.</h3>
+          <p>Emoção nos detalhes. Propósito em cada presente.</p>
+        </div>
+      </section>
+
+      <!-- 👥 Quem somos -->
+      <h3>Quem somos</h3>
+      <p>
+        A Lima Calixto Personalizados nasceu do desejo de transformar lembranças em presentes únicos e memoráveis.
+        Unimos design delicado, criatividade e emoção para entregar produtos que contam histórias e criam conexões.
+        Tudo é feito com carinho, atenção aos detalhes e foco em quem vai ser presenteado.
+      </p>
+
+      <!-- 🎯 Missão da empresa -->
+      <h3>Missão</h3>
+      <p>
+        Oferecer produtos personalizados que encantem e representem histórias, marcas e estilos com excelência e inovação.
+      </p>
+
+      <!-- 👁️ Visão de futuro -->
+      <h3>Visão</h3>
+      <p>
+        Ser referência nacional em personalização criativa, com atendimento humano e soluções sob medida para cada cliente.
+      </p>
+
+      <!-- 💎 Valores da marca -->
+      <h3>Valores</h3>
+      <ul>
+        <li>🎨 Criatividade</li>
+        <li>🤝 Compromisso com o cliente</li>
+        <li>🧵 Cuidado artesanal em cada peça</li>
+        <li>🚀 Evolução constante</li>
+      </ul>
+    </main>
+  </section>
+
+  <!-- 📌 Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Lima Calixto Personalizados - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ⚙️ Scripts de funcionalidade e personalização -->
+  <script src="../js/tema-aplicador.js" defer></script>     <!-- Aplica tema visual -->
+  <script src="../js/tema-loader.js" defer></script>        <!-- Carrega tema salvo -->
+  <script src="../js/tema-global.js" defer></script>        <!-- Configurações globais -->
+  <script src="../js/tema-visual.js" defer></script>        <!-- Interações visuais -->
+  <script src="../js/fontes-aplicar.js" defer></script>     <!-- Aplica fonte preferida -->
+  <script src="../js/menu-loader.js" defer></script>        <!-- Carrega menu dinâmico -->
+  <script type="module" src="../js/tema-interativo.js"></script> <!-- Tema interativo com import -->
+
+  <!-- 🌓 Detecta preferência de tema escuro do sistema -->
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.setAttribute('data-tema', prefersDark ? 'escuro' : 'claro');
+  </script>
+</body>
+</html>

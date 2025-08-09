@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escolha seu Tema</title>
+
+  <!-- 🎨 Estilos principais do projeto -->
+  <link rel="stylesheet" href="../css/base/core.css" />
+  <link rel="stylesheet" href="../css/base/theme.css" />
+  <link rel="stylesheet" href="../css/base/layout.css" />
+  <link rel="stylesheet" href="../css/paginas/temas.css" />
+  <link rel="stylesheet" href="../css/base/fontes.css" />
+  <link rel="stylesheet" href="../css/base/menu.css" />
+</head>
+<body class="pagina-temas">
+    <div class="page-wrapper">
+        <!-- 🧭 Cabeçalho com navegação -->
+        <header class="cabecalho">
+          <div class="topo-container container">
+            <h1 class="logo">🛍️ Catálogo Online - Temas</h1>
+
+            <div id="menu-container"></div>
+        </header>
+
+        <!-- ⚙️ Painel de configurações -->
+        <div id="painel-config" class="painel-config">
+          <h3>⚙️ Configurações</h3>
+
+          <!-- ⏰ Modo automático de tema -->
+          <div class="config-item">
+            <label for="modo-automatico">
+              <input type="checkbox" id="modo-automatico" />
+              Mudar tema automaticamente conforme o horário
+            </label>
+          </div>
+
+          <!-- 🔤 Seletor de fonte -->
+          <div class="config-item seletor-fonte">
+            <label for="fonte-preferida">Fonte preferida:</label>
+            <select id="fonte-preferida">
+              <option value="padrao">Padrão</option>
+              <option value="serif">Serifada</option>
+              <option value="monospace">Monoespaçada</option>
+              <option value="roboto">Roboto</option>
+              <option value="lora">Lora</option>
+              <option value="comic">Comic Sans</option>
+              <option value="open">Open Sans</option>
+              <option value="montserrat">Montserrat</option>
+              <option value="raleway">Raleway</option>
+              <option value="arimo">Arimo</option>
+            </select>
+            <input type="text" id="preview-fonte" placeholder="Digite sua frase aqui" />
+          </div>
+
+          <!-- 📏 Modo compacto -->
+          <div class="config-item modo-compacto">
+            <label for="modo-compacto">
+              <input type="checkbox" id="modo-compacto" />
+              Ativar modo compacto
+            </label>
+          </div>
+        </div>
+
+        <!-- 🎨 Conteúdo principal -->
+        <main class="container">
+          <section class="seletor-tema">
+            <h2>Escolha o Tema</h2>
+            <p>Passe o mouse para visualizar. Clique para aplicar.</p>
+
+            <!-- 🍔 Botão hamburguer para mobile -->
+            <button id="toggle-temas" class="hamburguer-tema">🎨 Temas</button>
+
+            <!-- 🎨 Painel com opções de temas -->
+            <div id="painel-temas" class="painel-temas">
+              <div id="btn-claro" class="preview" data-tema="claro">☀️ Claro</div>
+              <div id="btn-escuro" class="preview" data-tema="escuro">🌙 Escuro</div>
+              <div id="btn-pastel" class="preview" data-tema="pastel">🧁 Pastel</div>
+              <div id="btn-vaporwave" class="preview" data-tema="vaporwave">🌈 Vaporwave</div>
+              <div id="btn-oceano" class="preview" data-tema="oceano">🌊 Oceano</div>
+              <div id="btn-aurora" class="preview" data-tema="aurora">🌌 Aurora</div>
+              <div id="btn-azul" class="preview" data-tema="azul">🔵 Azul</div>
+              <div id="btn-verde" class="preview" data-tema="verde">🟢 Verde</div>
+
+              <!-- 🔄 Botão para redefinir tema -->
+              <button id="reset-tema" class="tema-btn">
+                <span class="icon-reset">🔄</span> Redefinir Tema
+              </button>
+
+              <!-- 🔔 Área de notificação -->
+              <div id="notificacao-tema" class="notificacao-tema"></div>
+            </div>
+          </section>
+
+          <!-- 🖼️ Área de visualização dinâmica -->
+          <div id="preview"></div>
+        </main>
+
+        <!-- 🧾 Rodapé -->
+        <footer class="footer">
+          <p>&copy; 2025 Lima Calixto Personalizados - Todos os direitos reservados.</p>
+        </footer>
+
+        <!-- 📜 Scripts de funcionalidade de temas -->
+        <script src="../js/tema-aplicador.js" defer></script>
+        <script src="../js/tema-loader.js" defer></script>
+        <script src="../js/tema-global.js" defer></script>
+        <script src="../js/tema-visual.js" defer></script>
+        <script src="../js/menu.js" defer></script>
+        <script src="../js/tema-dinamico.js" defer></script>
+        <script src="../js/fontes-configurar.js" defer></script>
+        <script src="../js/hamburger-temas.js" defer></script>
+        <script src="../js/menu.js" defer></script>
+        <script type="module" src="../js/tema-interativo.js"></script>
+
+        <script>
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.body.setAttribute('data-tema', prefersDark ? 'escuro' : 'claro');
+        </script>
+    </div>
+</body>
+</html>

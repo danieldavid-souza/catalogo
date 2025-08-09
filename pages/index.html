@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 🧠 Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Online</title>
+
+  <!-- 🎨 Estilos organizados por módulos -->
+  <link rel="stylesheet" href="../css/base/layout.css" />           <!-- Layout geral -->
+  <link rel="stylesheet" href="../css/base/core.css" />             <!-- Estilos base -->
+  <link rel="stylesheet" href="../css/base/theme.css" />            <!-- Temas visuais -->
+  <link rel="stylesheet" href="../css/base/temas.css" />            <!-- Estilos específicos de temas -->
+  <link rel="stylesheet" href="../css/paginas/index.css" />         <!-- Estilo da página inicial -->
+  <link rel="stylesheet" href="../css/base/rodape-paginas.css" />   <!-- Estilo do rodapé -->
+  <link rel="stylesheet" href="../css/base/fontes.css"/>            <!-- Tipografia -->
+  <link rel="stylesheet" href="../css/base/menu.css" />             <!-- Estilo do menu -->
+</head>
+
+<body>
+  <!-- 🔝 Cabeçalho com título e menu dinâmico -->
+  <header class="catalogo-header">
+    <div class="topo-container">
+      <h1 class="logo">🛍️ Catálogo Online - Página Inicial</h1>
+      <div id="menu-container"></div> <!-- Menu será carregado via JS -->
+    </div>
+  </header>
+
+  <!-- 📦 Conteúdo principal da página -->
+  <main class="container">
+    <!-- 🌤️ Widget de previsão do tempo -->
+    <section id="widget-tempo" class="widget-tempo">
+      <h2 class="titulo-secao">📆 Previsão para os próximos 4 dias</h2>
+      <div id="dias-container" class="dias-container"></div> <!-- Previsões serão inseridas via JS -->
+    </section>
+  </main>
+
+  <!-- ⚙️ Scripts adicionais para funcionalidades -->
+  <script src="../js/menu.js" defer></script>               <!-- Interações do menu -->
+  <script src="../js/tema-aplicador.js" defer></script>     <!-- Aplica tema visual -->
+  <script src="../js/clima.js" defer></script>              <!-- Carrega dados de clima -->
+  <script src="../js/fontes-aplicar.js" defer></script>     <!-- Aplica fonte preferida -->
+  <script src="../js/hamburger.js" defer></script>          <!-- Menu responsivo -->
+  <script src="../js/menu-loader.js" defer></script>        <!-- Carrega menu dinâmico -->
+  <script type="module" src="../js/tema-interativo.js"></script> <!-- Tema interativo com import -->
+
+  <!-- 🌓 Detecta preferência de tema escuro do sistema -->
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.setAttribute('data-tema', prefersDark ? 'escuro' : 'claro');
+  </script>
+
+  <!-- 🎨 Ícone animado com Lordicon -->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <lord-icon
+    src="https://cdn.lordicon.com/udbbestg.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:60px;height:60px">
+  </lord-icon>
+
+  <!-- 📌 Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Lima Calixto Personalizados - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

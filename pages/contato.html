@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 🧠 Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+
+  <!-- 🎨 Estilos principais e específicos da página -->
+  <link rel="stylesheet" href="../css/base/layout.css" />           <!-- Layout geral -->
+  <link rel="stylesheet" href="../css/base/core.css" />             <!-- Estilos base -->
+  <link rel="stylesheet" href="../css/base/theme.css" />            <!-- Temas visuais -->
+  <link rel="stylesheet" href="../css/base/fontes.css" />           <!-- Tipografia -->
+  <link rel="stylesheet" href="../css/base/rodape-paginas.css" />   <!-- Estilo do rodapé -->
+  <link rel="stylesheet" href="../css/paginas/contato.css" />       <!-- Estilo específico da página de contato -->
+  <link rel="stylesheet" href="../css/base/menu.css" />             <!-- Estilo do menu -->
+</head>
+
+<body>
+  <!-- 🧭 Cabeçalho da página -->
+  <header class="cabecalho">
+    <div class="topo-container">
+      <h1 class="logo">🛍️ Catálogo Online - Contato</h1>
+
+      <!-- 🔗 Menu será carregado dinamicamente via JavaScript -->
+      <div id="menu-container"></div>
+    </div>
+  </header>
+
+  <!-- 📬 Conteúdo principal da página de contato -->
+  <main class="contato">
+    <h2>📬 Fale Conosco</h2>
+    <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
+
+    <!-- 📝 Formulário de contato -->
+    <form class="form-contato" id="form-contato" method="POST">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required placeholder="Seu Nome" />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required placeholder="Seu E-mail" />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <!-- ✅ Área para exibir resposta após envio -->
+    <div id="resposta" style="display:none; margin-top:1em;"></div>
+  </main>
+
+  <!-- 📌 Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Lima Calixto Personalizados - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ⚙️ Scripts de funcionalidade e personalização -->
+  <script src="../js/tema-aplicador.js" defer></script>     <!-- Aplica tema visual -->
+  <script src="../js/tema-loader.js" defer></script>        <!-- Carrega tema salvo -->
+  <script src="../js/tema-global.js" defer></script>        <!-- Configurações globais de tema -->
+  <script src="../js/tema-visual.js" defer></script>        <!-- Interações visuais com tema -->
+  <script src="../js/fontes-aplicar.js" defer></script>     <!-- Aplica fonte preferida -->
+  <script src="../js/contato.js" defer></script>            <!-- Validação do formulário -->
+  <script src="../js/envia-email.js" defer></script>        <!-- Envio da mensagem via API ou backend -->
+  <script src="../js/menu.js" defer></script>               <!-- Carregamento do menu dinâmico -->
+  <script type="module" src="../js/tema-interativo.js"></script> <!-- Tema interativo com import -->
+
+  <!-- 🌓 Alternativa para detectar tema escuro do sistema (comentado) -->
+  <!--
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.setAttribute('data-tema', prefersDark ? 'escuro' : 'claro');
+  </script>
+  -->
+</body>
+</html>

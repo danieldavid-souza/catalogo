@@ -1,0 +1,257 @@
+[
+  {
+    "nome": "Caneca Branca Sublimada",
+    "descricao": "Porcelana branca de alta qualidade. Capacidade: 325ml.",
+    "preco": 38.00,
+    "imagem": "../assets/img_produtos/produto1.jpg",
+    "categoria": "Canecas",
+    "destaque": true
+  },
+  {
+    "nome": "Camiseta Branca para Sublimação",
+    "descricao": "100% poliéster. Modelagem unissex.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto2.jpg",
+    "categoria": "Camisetas",
+    "destaque": true
+  },
+  {
+    "nome": "Camiseta Cinza para Sublimação",
+    "descricao": "100% poliéster. Modelagem unissex.",
+    "preco": 48.00,
+    "imagem": "../assets/img_produtos/produto3.jpg",
+    "categoria": "Camisetas",
+    "destaque": true
+  },
+  {
+    "nome": "Caneca de Alumínio 600ml para Sublimação.",
+    "descricao": "Leve, resistente e com design moderno, a Caneca de Alumínio 600ml é perfeita para personalizações criativas e exclusivas.",
+    "preco": 30.00,
+    "imagem": "../assets/img_produtos/produto4.jpg",
+    "categoria": "Canecas",
+    "destaque": true
+  },
+  {
+    "nome": "Chaveiro Acrílico para Personalizar",
+    "descricao": "Prático, leve e versátil, o chaveiro acrílico é perfeito para personalizações criativas em ambos os lados. Com acabamento transparente.",
+    "preco": 5.00,
+    "imagem": "../assets/img_produtos/produto5.jpg",
+    "categoria": "Chaveiros",
+    "destaque": true
+  },
+  {
+    "nome": "Relógio MDF para Sublimação",
+    "descricao": "Moderno e funcional, o Relógio de MDF 20x20cm é ideal para transformar qualquer ambiente com um toque criativo. Fabricado em MDF de alta qualidade, possui superfície lisa e resistente, perfeita para personalizações.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto6.jpg",
+    "categoria": "Relógios",
+    "destaque": true
+  },
+  {
+    "nome": "Azulejo para Sublimação",
+    "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
+    "preco": 22.00,
+    "imagem": "../assets/img_produtos/produto7.jpg",
+    "categoria": "Azulejos",
+    "destaque": true
+  },
+  {
+    "nome": "Squeeze Alumínio",
+    "descricao": "Leve, resistente e prática, a Squeeze de Alumínio 500ml é ideal para personalizações criativas e funcionais. Possui superfície lisa que garante excelente qualidade de impressão.",
+    "preco": 30.00,
+    "imagem": "../assets/img_produtos/produto8.jpg",
+    "categoria": "Squeezes",
+    "destaque": true
+  },
+  {
+    "nome": "Plaquinha Acrílica Personalizada",
+    "descricao": "A Plaquinha Acrílica 10x15cm é perfeita para personalizações criativas e elegantes. Com acabamento transparente e brilho sofisticado, valoriza qualquer estampa.",
+    "preco": 15.00,
+    "imagem": "../assets/img_produtos/produto9.jpg",
+    "categoria": "Placas",
+    "destaque": true
+  },
+  {
+    "nome": "Placa de MDF para Sublimação",
+    "descricao": "Com superfície lisa e acabamento impecável, garante excelente aderência da estampa, Perfeita para placas decorativas, lembranças de eventos ou presentes criativos. Tamanho A4.",
+    "preco": 35.00,
+    "imagem": "../assets/img_produtos/produto10.jpg",
+    "categoria": "Placas",
+    "destaque": true
+  },
+  {
+    "nome": "Caneca de Vidro Jateada para Sublimação",
+    "descricao": "Elegante e diferenciada, a Caneca de Vidro Jateada 475ml é perfeita para criar personalizações sofisticadas.",
+    "preco": 50.00,
+    "imagem": "../assets/img_produtos/produto11.jpg",
+    "categoria": "Canecas",
+    "destaque": true
+  },
+  {
+    "nome": "Chaveiro MDF para Sublimação",
+    "descricao": "Leve, resistente e totalmente personalizável, o Chaveiro de MDF é ideal para criar lembranças únicas e criativas. Perfeito para brindes, lembranças de eventos, presentes personalizados.",
+    "preco": 5.00,
+    "imagem": "../assets/img_produtos/produto12.jpg",
+    "categoria": "Chaveiros",
+    "destaque": false
+  },
+  {
+    "nome": "Calendário de Mesa Triangular",
+    "descricao": "Prático e funcional, o Calendário de Mesa Triangular é perfeito para organização e divulgação da sua marca durante todo o ano. Com design estável e espaço para personalização, permite incluir logotipos, imagens ou mensagens, tornando-se um brinde corporativo útil e elegante.",
+    "preco": 10.00,
+    "imagem": "../assets/img_produtos/produto13.jpg",
+    "categoria": "Calendario",
+    "destaque": true
+  },
+  {
+    "nome": "Convite Digital",
+    "descricao": "Moderno, prático e personalizado, o Convite Digital é a escolha perfeita para tornar qualquer celebração ainda mais especial. Desenvolvido para festas infantis e adultas, oferece design exclusivo e facilidade de envio por WhatsApp, e-mail ou redes sociais.",
+    "preco": 5.00,
+    "imagem": "../assets/img_produtos/produto14.jpg",
+    "categoria": "Convites",
+    "destaque": false
+  },
+  {
+    "nome": "Convite Digital",
+    "descricao": "Moderno, prático e personalizado, o Convite Digital é a escolha perfeita para tornar qualquer celebração ainda mais especial. Desenvolvido para festas infantis e adultas, oferece design exclusivo e facilidade de envio por WhatsApp, e-mail ou redes sociais.",
+    "preco": 32.00,
+    "imagem": "../assets/img_produtos/produto15.jpg",
+    "categoria": "Convites",
+    "destaque": false
+  },
+  {
+    "nome": "Convite Digital",
+    "descricao": "Moderno, prático e personalizado, o Convite Digital é a escolha perfeita para tornar qualquer celebração ainda mais especial. Desenvolvido para festas infantis e adultas, oferece design exclusivo e facilidade de envio por WhatsApp, e-mail ou redes sociais.",
+    "preco": 5.00,
+    "imagem": "../assets/img_produtos/produto16.jpg",
+    "categoria": "Convites",
+    "destaque": false
+  },
+  {
+    "nome": "Camisa branca 100% poliéster para sublimação",
+    "descricao": "Com tecido leve, macio e de alta durabilidade, oferece excelente fixação das cores, garantindo estampas vivas e nítidas.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto17.jpg",
+    "categoria": "Camisetas",
+    "destaque": false
+  },
+  {
+    "nome": "Camisa branca 100% poliéster para sublimação",
+    "descricao": "Com tecido leve, macio e de alta durabilidade, oferece excelente fixação das cores, garantindo estampas vivas e nítidas.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto18.jpg",
+    "categoria": "Camisetas",
+    "destaque": false
+  },
+  {
+    "nome": "Camisa branca 100% poliéster para sublimação",
+    "descricao": "Com tecido leve, macio e de alta durabilidade, oferece excelente fixação das cores, garantindo estampas vivas e nítidas.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto19.jpg",
+    "categoria": "Camisetas",
+    "destaque": false
+  },
+  {
+    "nome": "Camisa branca 100% poliéster para sublimação",
+    "descricao": "Com tecido leve, macio e de alta durabilidade, oferece excelente fixação das cores, garantindo estampas vivas e nítidas.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto20.jpg",
+    "categoria": "Camisetas",
+    "destaque": false
+  },
+  {
+    "nome": "Agenda com capa em MDF para sublimação",
+    "descricao": "Com acabamento resistente e superfície lisa, permite estampas com cores vivas e detalhes precisos. Ideal para uso diário, organização pessoal.",
+    "preco": 65.00,
+    "imagem": "../assets/img_produtos/produto21.jpg",
+    "categoria": "Agendas",
+    "destaque": false
+  },
+  {
+    "nome": "Agenda com capa em MDF para sublimação",
+    "descricao": "Com acabamento resistente e superfície lisa, permite estampas com cores vivas e detalhes precisos. Ideal para uso diário, organização pessoal.",
+    "preco": 65.00,
+    "imagem": "../assets/img_produtos/produto22.jpg",
+    "categoria": "Agendas",
+    "destaque": true
+  },
+  {
+    "nome": "Agenda com capa em MDF para sublimação",
+    "descricao": "Com acabamento resistente e superfície lisa, permite estampas com cores vivas e detalhes precisos. Ideal para uso diário, organização pessoal.",
+    "preco": 65.00,
+    "imagem": "../assets/img_produtos/produto23.jpg",
+    "categoria": "Agendas",
+    "destaque": false
+  },
+  {
+    "nome": "Agenda com capa em MDF para sublimação",
+    "descricao": "Com acabamento resistente e superfície lisa, permite estampas com cores vivas e detalhes precisos. Ideal para uso diário, organização pessoal.",
+    "preco": 65.00,
+    "imagem": "../assets/img_produtos/produto24.jpg",
+    "categoria": "Agendas",
+    "destaque": false
+  },
+  {
+    "nome": "Azulejo para Sublimação",
+    "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto25.jpg",
+    "categoria": "Azulejos",
+    "destaque": false
+  },
+  {
+    "nome": "Azulejo para Sublimação",
+    "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto26.jpg",
+    "categoria": "Azulejos",
+    "destaque": false
+  },
+  {
+    "nome": "Azulejo para Sublimação",
+    "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto27.jpg",
+    "categoria": "Azulejos",
+    "destaque": false
+  },  {
+    "nome": "Azulejo para Sublimação",
+    "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
+    "preco": 40.00,
+    "imagem": "../assets/img_produtos/produto28.jpg",
+    "categoria": "Azulejos",
+    "destaque": false
+  },
+  {
+    "nome": "Caneca Branca Sublimada",
+    "descricao": "Porcelana branca de alta qualidade. Capacidade: 325ml.",
+    "preco": 38.00,
+    "imagem": "../assets/img_produtos/produto29.jpg",
+    "categoria": "Canecas",
+    "destaque": true
+  },
+  {
+    "nome": "Caneca Branca Sublimada",
+    "descricao": "Porcelana branca de alta qualidade. Capacidade: 325ml.",
+    "preco": 38.00,
+    "imagem": "../assets/img_produtos/produto30.jpg",
+    "categoria": "Canecas",
+    "destaque": false
+  },
+  {
+    "nome": "Caneca de polímero para sublimação",
+    "descricao": "Leve, resistente e extremamente durável, é perfeita para personalizações criativas. Possui acabamento liso que garante estampas com cores vivas e alta definição.",
+    "preco": 30.00,
+    "imagem": "../assets/img_produtos/produto31.jpg",
+    "categoria": "Canecas",
+    "destaque": true
+  },
+  {
+    "nome": "Caneca de polímero para sublimação",
+    "descricao": "Leve, resistente e extremamente durável, é perfeita para personalizações criativas. Possui acabamento liso que garante estampas com cores vivas e alta definição.",
+    "preco": 30.00,
+    "imagem": "../assets/img_produtos/produto32.jpg",
+    "categoria": "Canecas",
+    "destaque": false
+  }
+]

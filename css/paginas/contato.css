@@ -1,0 +1,101 @@
+/* ============================================
+   📄 CONTATO.CSS – Estilos da página Contato
+   ============================================ */
+
+/* 🔹 Seção de formulário */
+.contato {
+  padding: 60px 20px; /* espaçamento interno */
+  background-color: var(--cor-fundo); /* cor de fundo dinâmica */
+  color: var(--cor-texto); /* cor do texto */
+  max-width: 600px; /* largura máxima */
+  margin: 0 auto; /* centraliza horizontalmente */
+  animation: fadeIn 0.6s ease; /* animação de entrada */
+}
+
+/* 🔹 Animação de entrada suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Título da seção */
+.contato h2 {
+  font-size: 2.5rem;
+  color: var(--cor-titulo); /* cor destacada para título */
+  margin-bottom: 20px;
+}
+
+/* 🔹 Campos do formulário */
+.contato form input,
+.contato form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  background-color: var(--cor-destaque); /* fundo dos campos */
+  color: var(--cor-texto); /* texto dentro dos campos */
+}
+
+/* 🔹 Botão de envio */
+.contato form button {
+  padding: 10px 20px;
+  background-color: var(--cor-link); /* cor principal do botão */
+  color: var(--cor-texto-claro); /* contraste para legibilidade */
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 🔹 Hover no botão */
+.contato form button:hover {
+  background-color: var(--cor-link-hover); /* cor ao passar o mouse */
+}
+
+/* 📱 Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .contato {
+    padding: 30px 10px;
+  }
+
+  .contato h2 {
+    font-size: 2rem;
+  }
+
+  .form-contato {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Mensagem de resposta após envio */
+#resposta {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+/* ✅ Estilo para resposta de sucesso */
+#resposta.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* ❌ Estilo para resposta de erro */
+#resposta.erro {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

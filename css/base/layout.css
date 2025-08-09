@@ -1,0 +1,48 @@
+/* ============================================
+   📄 LAYOUT.CSS – Estilos estruturais globais
+   ============================================ */
+
+/* 🔹 Cabeçalho principal */
+header {
+  background-color: var(--cor-destaque); /* cor de fundo suave */
+  color: var(--cor-cabecalho-texto); /* cor do texto no cabeçalho */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* separa logo e menu */
+  align-items: center;
+}
+
+/* 🔹 Logo do site */
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--cor-titulo); /* cor destacada para título */
+}
+
+/* 🔹 Menu de navegação */
+nav ul {
+  list-style: none; /* remove marcadores padrão */
+  display: flex;
+  gap: 20px; /* espaçamento entre itens */
+}
+
+/* 🔹 Links do menu */
+nav a {
+  color: var(--cor-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 🔹 Efeito hover nos links */
+nav a:hover {
+  color: var(--cor-link-hover);
+}
+
+/* 🔹 Rodapé do site */
+footer {
+  background-color: var(--cor-destaque); /* mesma cor do cabeçalho */
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}

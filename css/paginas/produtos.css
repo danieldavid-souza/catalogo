@@ -1,0 +1,270 @@
+/* ============================================
+   🛍️ CATÁLOGO.CSS – Estilos da página de produtos
+   ============================================ */
+
+/* 🛍️ Grade de produtos */
+#catalogo {
+  display: grid; /* layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* colunas responsivas */
+  gap: 24px; /* espaçamento entre os cards */
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* centraliza o grid */
+}
+
+/* 🎛️ Filtros de busca e seleção */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* 🔹 Label dos filtros */
+.filtros label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* 🔹 Campos de entrada e seleção */
+.filtros input,
+.filtros select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 🔍 Grupo "Buscar" em linha separada */
+.filtro-busca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 8px;
+}
+
+/* ✨ Foco nos campos */
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* 🧩 Cartão de produto */
+.produto-card {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  background-color: var(--fundo-card, #fff);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* 🔹 Efeito hover no card */
+.produto-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔹 Imagem do produto */
+.produto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* 🔹 Título do produto */
+.produto-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 6px;
+  color: var(--texto-titulo, #222);
+}
+
+/* 🔹 Descrição do produto */
+.produto-card p {
+  font-size: 0.95rem;
+  color: var(--texto-corpo, #555);
+  margin-bottom: 10px;
+}
+
+/* 🔹 Preço do produto */
+.produto-card .preco {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--texto-preco, #2e7d32);
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* 📱 Botão WhatsApp */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* 🔹 Conteúdo interno do botão */
+.whatsapp-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔹 Hover no botão */
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* 🔹 Ícone do WhatsApp */
+.whatsapp-content img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 🔍 Lightbox para visualização ampliada */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 🔹 Lightbox ativo */
+.lightbox.ativo {
+  display: flex;
+}
+
+/* 🔹 Imagem ampliada */
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  object-fit: contain;
+}
+
+/* 🔹 Botão de fechar */
+.lightbox .fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 🔹 Navegação entre imagens */
+.lightbox .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.lightbox .anterior { left: 20px; }
+.lightbox .proxima { right: 20px; }
+
+/* 🔹 Texto explicativo */
+.lightbox p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* 🔹 Tema escuro do lightbox */
+.lightbox.escuro {
+  background-color: #111;
+  color: #eee;
+}
+
+.lightbox.escuro img {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Imagem com manipulação de toque */
+.lightbox img {
+  max-width: 100%;
+  height: auto;
+  touch-action: manipulation;
+}
+
+/* 🧪 Zoom alternativo */
+.zoom-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* 🎛️ Filtros com layout centralizado */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* 📱 Responsividade para telas menores */
+@media (max-width: 768px) {
+  .filtros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtro-busca {
+    max-width: 100%;
+  }
+
+  .filtros label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .filtros input[type="number"],
+  .filtros input[type="text"],
+  .filtros select {
+    width: 100%;
+    max-width: 200px;
+    padding: 6px;
+  }
+}

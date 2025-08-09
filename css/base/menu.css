@@ -1,0 +1,64 @@
+/* ============================================
+   📁 MENU.CSS – Estilos para navegação responsiva
+   ============================================ */
+
+/* 🔹 Container do menu */
+.menu-navegacao {
+  background-color: transparent; /* fundo transparente por padrão */
+  padding: 10px;
+  position: relative;
+}
+
+/* 🎨 Estilo dos links no tema claro */
+body.tema-claro .menu-lista li a {
+  color: var(--cor-texto);
+}
+
+/* 🍔 Botão de menu (hambúrguer) – visível em telas pequenas */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* acima do menu */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📋 Lista de navegação – oculta por padrão em mobile */
+.menu-lista {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  top: 60px; /* abaixo do botão */
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* ✅ Menu visível quando ativo */
+.menu-lista.ativo {
+  display: flex;
+}
+
+/* 🖥️ Estilos para telas maiores (desktop) */
+@media (min-width: 769px) {
+  .menu-lista {
+    display: flex !important; /* sempre visível */
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: none; /* oculta o botão em desktop */
+  }
+}

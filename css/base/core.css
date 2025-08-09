@@ -1,0 +1,72 @@
+/* ================================
+   🧩 CORE.CSS – Estilos base e reset
+   ================================ */
+
+/* 🎨 Variáveis globais para tema claro */
+:root {
+  /* 🔤 Tipografia e layout */
+  --fonte-principal: 'Segoe UI', sans-serif;
+  --espacamento: 1rem;
+  --borda-radius: 8px;
+  --transicao-suave: all 0.3s ease;
+
+  /* 🌞 Cores do tema claro */
+  --cor-fundo: #ffffff;
+  --cor-texto: #222222;
+  --cor-titulo: #111111;
+  --cor-link: #0077cc;
+  --cor-link-hover: #005fa3;
+  --cor-destaque: #f0f8ff;
+  --cor-cabecalho-texto: #333333;
+  --cor-borda: #dddddd;
+}
+
+/* 🔄 Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🧱 Elementos estruturais */
+html {
+  scroll-behavior: smooth; /* rolagem suave */
+  font-size: 16px; /* base para rem */
+}
+
+body {
+  font-family: var(--fonte-principal);
+  line-height: 1.6;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: var(--transicao-suave);
+  min-height: 100vh;
+}
+
+/* 🔗 Links padrão */
+a {
+  color: var(--cor-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-link-hover);
+}
+
+/* 🖋️ Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--cor-titulo);
+  margin-bottom: 0.5rem;
+}
+
+/* 📄 Parágrafos */
+p {
+  margin-bottom: 1rem;
+}
+
+/* 🧮 Listas */
+ul {
+  list-style: none; /* remove marcadores padrão */
+}

@@ -1,0 +1,125 @@
+/* ====================================
+   🎨 THEME.CSS – Sistema de temas dinâmicos
+   ==================================== */
+
+/* 🔹 Variáveis padrão (fallback) */
+:root {
+  --cor-fundo: #f9f9f9;
+  --cor-texto: #333;
+  --cor-titulo: #0077cc;
+  --cor-borda: #ccc;
+  --cor-destaque: #fff;
+  --cor-link: #0077cc;
+  --cor-link-hover: #005fa3;
+  --cor-texto-claro: #ffffff;
+  --cor-cabecalho-texto: #333;
+  --cor-bg-rodape: #f9f9f9;
+}
+
+/* ================================
+   🧩 Temas aplicados via classe no <body>
+   ================================ */
+
+/* 🌞 Tema Claro */
+body.tema-claro {
+  --cor-fundo: #ffffff;
+  --cor-texto: #222222;
+  --cor-titulo: #111111;
+  --cor-link: #0077cc;
+  --cor-link-hover: #005fa3;
+  --cor-borda: #dddddd;
+  --cor-destaque: #f0f8ff;
+  --cor-cabecalho-texto: #333333;
+  --cor-bg-rodape: #f0f8ff;
+}
+
+/* 🌙 Tema Escuro */
+body.tema-escuro {
+  --cor-fundo: #1e1e1e;
+  --cor-texto: #eeeeee;
+  --cor-titulo: #ffffff;
+  --cor-link: #66ccff;
+  --cor-link-hover: #33aaff;
+  --cor-borda: #333333;
+  --cor-destaque: #333333;
+  --cor-cabecalho-texto: #ffffff;
+  --cor-bg-rodape: #1e1e1e;
+}
+
+/* 🍭 Tema Pastel */
+body.tema-pastel {
+  --cor-fundo: #fffaf3;
+  --cor-texto: #5c5c5c;
+  --cor-titulo: #ff69b4;
+  --cor-link: #ffa07a;
+  --cor-link-hover: #ff7f50;
+  --cor-borda: #f4e1d2;
+  --cor-destaque: #fef0e6;
+  --cor-cabecalho-texto: #5c5c5c;
+  --cor-bg-rodape: #fef0e6;
+}
+
+/* 🌈 Tema Vaporwave */
+body.tema-vaporwave {
+  --cor-fundo: #2e1f47;
+  --cor-texto: #ffe0f7;
+  --cor-titulo: #ffb6f9;
+  --cor-link: #f8f6f7;
+  --cor-link-hover: #ff8ee0;
+  --cor-borda: #3a2b5f;
+  --cor-destaque: #ff5ec4;
+  --cor-cabecalho-texto: #fdfdfd;
+  --cor-bg-rodape: #ff5ec4;
+}
+
+/* 🌊 Tema Oceano */
+body.tema-oceano {
+  --cor-fundo: #003f5c;
+  --cor-texto: #ffffff;
+  --cor-titulo: #a0e7ff;
+  --cor-link: #66ccff;
+  --cor-link-hover: #33aaff;
+  --cor-borda: #2f4b7c;
+  --cor-destaque: #2f4b7c;
+  --cor-cabecalho-texto: #ffffff;
+  --cor-bg-rodape: #2f4b7c;
+}
+
+/* 🌌 Tema Aurora */
+body.tema-aurora {
+  --cor-fundo: #2d1e4f;
+  --cor-texto: #f8f8f2;
+  --cor-titulo: #ff79c6;
+  --cor-link: #8d40fa;
+  --cor-link-hover: #ffb86c;
+  --cor-borda: #44475a;
+  --cor-destaque: #ff79c6;
+  --cor-cabecalho-texto: #1c1c1c;
+  --cor-bg-rodape: #ff79c6;
+}
+
+/* 🔵 Tema Azul */
+body.tema-azul {
+  --cor-fundo: #e6f0ff;
+  --cor-texto: #1a1a1a;
+  --cor-titulo: #004080;
+  --cor-link: #0066cc;
+  --cor-link-hover: #0047a3;
+  --cor-borda: #99c2ff;
+  --cor-destaque: #cce0ff;
+  --cor-cabecalho-texto: #00264d;
+  --cor-bg-rodape: #cce0ff;
+}
+
+/* 🟢 Tema Verde */
+body.tema-verde {
+  --cor-fundo: #f0fff0;
+  --cor-texto: #1f3d1f;
+  --cor-titulo: #228B22;
+  --cor-link: #2e8b57;
+  --cor-link-hover: #006400;
+  --cor-borda: #b2d8b2;
+  --cor-destaque: #dfffe0;
+  --cor-cabecalho-texto: #145214;
+  --cor-bg-rodape: #dfffe0;
+}

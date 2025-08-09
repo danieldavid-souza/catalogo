@@ -1,0 +1,26 @@
+/* ============================================
+   📄 SOBRE.CSS – Estilos da página Sobre
+   ============================================ */
+
+/* 🔹 Seção principal de apresentação */
+.sobre {
+  padding: 60px 20px; /* espaçamento interno generoso */
+  background-color: var(--cor-fundo); /* fundo adaptado ao tema */
+  color: var(--cor-texto); /* cor do texto adaptada ao tema */
+  max-width: 800px; /* largura máxima para melhor leitura */
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+/* 🔹 Título da seção */
+.sobre h2 {
+  font-size: 2.5rem; /* tamanho grande para destaque */
+  color: var(--cor-titulo); /* cor do título adaptada ao tema */
+  margin-bottom: 20px; /* espaçamento abaixo do título */
+}
+
+/* 🔹 Texto da seção */
+.sobre p {
+  font-size: 1.1rem; /* tamanho confortável para leitura */
+  line-height: 1.6; /* espaçamento entre linhas para fluidez */
+  color: var(--cor-texto); /* cor do texto adaptada ao tema */
+}

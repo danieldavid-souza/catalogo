@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 🧠 Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Produtos</title>
+
+  <!-- 🎨 Estilos principais do projeto -->
+  <link rel="stylesheet" href="../css/base/core.css" />               <!-- Estilos essenciais -->
+  <link rel="stylesheet" href="../css/base/theme.css" />              <!-- Temas visuais -->
+  <link rel="stylesheet" href="../css/base/layout.css" />             <!-- Layout geral -->
+  <link rel="stylesheet" href="../css/base/menu.css" />               <!-- Estilo do menu -->
+  <link rel="stylesheet" href="../css/paginas/produtos.css" />        <!-- Estilo específico da página de produtos -->
+  <link rel="stylesheet" href="../css/base/fontes.css" />             <!-- Tipografia -->
+</head>
+
+<!-- 🧩 Aplica o tema visual padrão -->
+<body class="pagina-produtos" data-tema="claro">
+  <div class="page-wrapper">
+    
+    <!-- 🔝 Cabeçalho com título e menu dinâmico -->
+    <header>
+      <h1 class="logo">🛍️ Catálogo Online - Produtos</h1>
+      <div id="menu-container"></div> <!-- Menu será carregado via JS -->
+    </header>
+
+    <!-- 🎛️ Filtros de busca e navegação -->
+    <section class="filtros">
+      <label for="filtro-categoria">Categoria:</label>
+      <select id="filtro-categoria"></select> <!-- Populado dinamicamente -->
+
+      <label for="filtro-destaque">
+        <input type="checkbox" id="filtro-destaque" />
+        Apenas destaques
+      </label>
+
+      <label for="filtro-preco-min">Preço mínimo:</label>
+      <input type="number" id="filtro-preco-min" placeholder="0" min="0" />
+
+      <label for="filtro-preco-max">Preço máximo:</label>
+      <input type="number" id="filtro-preco-max" placeholder="999" min="0" />
+
+      <div class="filtro-busca">
+        <label for="filtro-busca">Buscar:</label>
+        <input type="text" id="filtro-busca" placeholder="Nome ou descrição" />
+      </div>
+    </section>
+
+    <!-- 🛍️ Catálogo de produtos renderizado via JS -->
+    <main class="container">
+      <section id="catalogo" class="produto-card"></section>
+    </main>
+
+    <!-- 🔍 Lightbox para visualização ampliada de imagens -->
+    <div class="lightbox" id="lightbox">
+      <span class="fechar" onclick="fecharLightbox()">×</span>           <!-- Botão de fechar -->
+      <button class="nav anterior" onclick="imagemAnterior()">❮</button> <!-- Imagem anterior -->
+      <img id="lightbox-img" src="" alt="Imagem ampliada" />             <!-- Imagem ampliada -->
+      <p id="lightbox-caption"></p>                                      <!-- Legenda da imagem -->
+      <button class="nav proxima" onclick="proximaImagem()">❯</button>   <!-- Próxima imagem -->
+    </div>
+
+    <!-- 📌 Rodapé da página -->
+    <footer class="footer">
+      <p>&copy; 2025 Lima Calixto Personalizados - Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- ⚙️ Scripts de funcionalidade -->
+  <script src="../js/tema-aplicador.js" defer></script>     <!-- Aplica tema visual -->
+  <script src="../js/tema-loader.js" defer></script>        <!-- Carrega tema salvo -->
+  <script src="../js/tema-global.js" defer></script>        <!-- Configurações globais -->
+  <script src="../js/fontes.js" defer></script>             <!-- Configurações de fonte -->
+  <script src="../js/menu.js" defer></script>               <!-- Interações do menu -->
+  <script src="../js/catalogo.js" defer></script>           <!-- Lógica de renderização de produtos -->
+  <script src="../js/fontes-aplicar.js" defer></script>     <!-- Aplica fonte preferida -->
+</body>
+</html>

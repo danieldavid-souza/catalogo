@@ -1,0 +1,406 @@
+/* ============================================
+   📄 INDEX.CSS – Estilos específicos da página inicial
+   Utiliza variáveis definidas em theme.css
+   ============================================ */
+
+/* 🔹 Banner principal da página */
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/img_fundo/fundo.jpg'); /* imagem de fundo */
+  background-size: cover; /* cobre toda a área */
+  background-position: center; /* centraliza a imagem */
+  display: flex; /* centraliza conteúdo interno */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--cor-titulo); /* cor do título adaptada ao tema */
+}
+
+/* 🔹 Título dentro do banner */
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombra leve para destaque */
+}
+
+/* 🔹 Seção de destaques */
+.destaques {
+  padding: 60px 20px;
+  background-color: var(--cor-destaque); /* fundo de destaque adaptado ao tema */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* 🔹 Cada item de destaque */
+.destaque-item {
+  width: 300px;
+  background-color: var(--cor-fundo); /* fundo do card adaptado ao tema */
+  border: 1px solid var(--cor-borda); /* borda adaptada ao tema */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra leve */
+  padding: 20px;
+  text-align: center;
+  color: var(--cor-texto); /* texto adaptado ao tema */
+}
+
+/* 🔹 Título do item */
+.destaque-item h1 h2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--cor-titulo); /* título adaptado ao tema */
+}
+
+/* 🔹 Texto do item */
+.destaque-item p {
+  font-size: 1rem;
+  color: var(--cor-texto); /* texto adaptado ao tema */
+}
+
+/* 🔹 Botão de ação */
+.botao {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--cor-link); /* cor do botão baseada na cor de link */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* animação suave no hover */
+}
+
+/* 🔹 Efeito hover no botão */
+.botao:hover {
+  background-color: var(--cor-link-hover); /* cor ao passar o mouse */
+}
+
+/* 🔹 Rodapé da página */
+footer {
+  background-color: var(--cor-destaque); /* fundo do rodapé adaptado ao tema */
+  color: var(--cor-texto); /* texto do rodapé adaptado ao tema */
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* 🔹 Links no rodapé */
+footer a {
+  color: var(--cor-link); /* cor dos links no rodapé */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* 🔹 Hover nos links do rodapé */
+footer a:hover {
+  color: var(--cor-link-hover); /* cor ao passar o mouse */
+}
+
+/* ============================================
+   📱 Estilos responsivos para telas pequenas
+   ============================================ */
+
+@media (max-width: 600px) {
+  /* 🔹 Cabeçalho fixo e compacto */
+  .catalogo-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .topo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-cabecalho-texto);
+  }
+
+  /* 🔹 Menu colapsável */
+  .menu {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu.ativo {
+    display: block;
+  }
+
+  .menu-lista {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .menu-lista li {
+    text-align: left;
+  }
+
+  /* 🔹 Conteúdo principal em coluna única */
+  .container {
+    padding: 100px 15px 30px; /* espaço extra para cabeçalho fixo */
+  }
+
+  .destaques {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .destaque-item {
+    width: 100%;
+  }
+
+  /* 🔹 Botões adaptados para toque */
+  .botao {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* 🔹 Widget de tempo adaptado */
+  .widget-tempo h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .dias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* 🔹 Rodapé simples e centralizado */
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================================
+   🌤️ Previsão do Tempo – Estilo para index.html
+   ============================================ */
+
+/* 🔹 Seção principal da previsão */
+#widget-tempo {
+  background-color: var(--cor-destaque);
+  padding: 40px 20px;
+  border-radius: 8px;
+  color: var(--cor-texto);
+  margin-top: 2rem;
+}
+
+/* 🔹 Título da seção */
+#widget-tempo h2 {
+  font-size: 2rem;
+  color: var(--cor-titulo);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.widget-tempo {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* 🔹 Contêiner dos dias */
+.dias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 🔹 Card de previsão do tempo */
+.card-tempo {
+  width: calc(50% - 20px); /* dois por linha com gap */
+  max-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 🔹 Título da seção */
+.titulo-secao {
+  grid-column: 1 / -1; /* ocupa todas as colunas */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 0;
+}
+
+/* 🔹 Bloco individual de cada dia */
+#dias-container .dia {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+/* 🔹 Efeito ao passar o mouse */
+#dias-container .dia:hover {
+  transform: scale(1.03);
+}
+
+/* 🔹 Título do dia */
+#dias-container .dia h3 {
+  font-size: 1.2rem;
+  color: var(--cor-titulo);
+  margin-bottom: 10px;
+}
+
+/* 🔹 Informações do clima */
+#dias-container .dia p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  color: var(--cor-texto);
+}
+
+/* 🔹 Card de clima com imagem animada */
+.card-tempo {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--cor-fundo);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-tempo p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: var(--cor-texto);
+}
+
+.card-tempo img {
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: auto;
+  animation: aparecer 0.6s ease-out forwards, girar 10;
+}
+
+/* 🔹 Animação de entrada da imagem */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* imagem sobe suavemente */
+  }
+}
+
+/* 🔹 Animação de balanço contínuo */
+@keyframes balancar {
+  0%, 100% { transform: rotate(-5deg); } /* inclinação inicial e final */
+  50% { transform: rotate(5deg); } /* inclinação oposta no meio */
+}
+
+/* 🔹 Aplicação da animação de balanço na imagem */
+.card-tempo img {
+  animation: balancar 2s ease-in-out infinite; /* efeito contínuo de balanço */
+}
+
+/* ============================================
+   📋 Menu de navegação – Estilo base
+   ============================================ */
+
+/* 🔹 Contêiner do menu */
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent; /* fundo removido para visual limpo */
+}
+
+/* 🔹 Botão para abrir/fechar menu em telas pequenas */
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black; /* cor preta para visibilidade */
+  display: none; /* oculto em telas grandes */
+}
+
+/* 🔹 Lista de links do menu */
+.menu-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* 🔹 Estilo dos links do menu */
+.menu-lista li a {
+  color: black; /* cor preta para contraste */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ============================================
+   📱 Menu responsivo – Estilo para telas pequenas
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* 🔹 Exibe botão de menu em telas pequenas */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* 🔹 Menu colapsado por padrão */
+  .menu-lista {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  /* 🔹 Menu expandido quando ativo */
+  .menu-lista.ativo {
+    display: flex;
+  }
+
+  /* 🔹 Estilo dos links no menu expandido */
+  .menu-lista li a {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* linha divisória leve */
+  }
+
+  /* 🔹 Card de clima ocupa toda a largura */
+  .card-tempo {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* centraliza o card */
+  }
+}

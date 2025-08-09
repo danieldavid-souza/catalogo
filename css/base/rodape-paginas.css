@@ -1,0 +1,29 @@
+/* ========================================================
+   📐 RODAPÉ-PAGINAS.CSS – Layout com rodapé fixo ao final
+   ====================================================== */
+
+/* 🔹 Reset de altura para ocupar 100% da viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 🔹 Estrutura flexível da página */
+body {
+  display: flex;
+  flex-direction: column; /* empilha cabeçalho, conteúdo e rodapé */
+  min-height: 100vh; /* garante altura mínima da tela */
+}
+
+/* 🔹 Área principal do conteúdo */
+main {
+  flex: 1; /* ocupa o espaço restante entre header e footer */
+}
+
+/* 🔹 Rodapé fixado ao final */
+footer {
+  background: var(--cor-bg-rodape); /* cor de fundo personalizada */
+  color: var(--cor-texto);
+  padding: 20px;
+  text-align: center;
+}
