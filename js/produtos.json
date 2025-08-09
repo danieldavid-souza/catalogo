@@ -203,7 +203,7 @@
     "nome": "Azulejo para Sublimação",
     "descricao": "Elegante e versátil, o Azulejo 20x20cm é perfeito para criar peças decorativas personalizadas com alta qualidade. Com superfície lisa e acabamento brilhante, proporciona cores vivas e detalhes nítidos.",
     "preco": 40.00,
-    "imagem": "../assets/img_produtos/produto26.jpg",
+    "imagem": "./assets/img_produtos/produto26.jpg",
     "categoria": "Azulejos",
     "destaque": false
   },
