@@ -31,19 +31,11 @@ fetch("./js/produtos.json")
         <p>${produto.descricao}</p>
         <span class="preco">R$ ${produto.preco.toFixed(2)}</span>
         
-        <!-- Botão do WhatsApp com ícone e mensagem dinâmica
+        <!-- Botão do WhatsApp com ícone e mensagem dinâmica -->
         <a href="${urlWhatsApp}" class="whatsapp-btn" target="_blank">
           <div class="whatsapp-content">
-            <!--<img src="/assets/icones/whatsapp.png" alt="WhatsApp" />-->
-            <img src="https://danieldavid-souza.github.io/catalogo/assets/icones/whatsapp.png" alt="WhatsApp" />
-            <span>Fale no WhatsApp</span>
-          </div>
-        </a>-->
-
-        <a href="${urlWhatsApp}" class="whatsapp-btn" target="_blank">
-          <div class="whatsapp-content">
-            <img src="https://danieldavid-souza.github.io/catalogo/assets/icones/whatsapp.png" alt="WhatsApp" />
-            <span>Fale no WhatsApp</span>
+          <img src="assets/icones/whatsapp.png" alt="WhatsApp" />
+          <span>Fale no WhatsApp</span>
           </div>
         </a>
       `;
