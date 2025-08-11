@@ -1,5 +1,5 @@
 /* ============================================
-   🎛️ FILTRO DE PRODUTOS – filtro.js
+   🎛️ FILTRO.JS – Aplicação dinâmica de filtros
    ============================================ */
 document.addEventListener("DOMContentLoaded", () => {
   // 🔹 Referência aos elementos de filtro
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filtroBusca = document.getElementById("filtro-busca");
 
   // 🔹 Função principal para aplicar os filtros
-  function aplicarFiltros() {
+  function aplicarFiltrosExternos() {
     const categoria = filtroCategoria?.value || "todos";
     const destaque = filtroDestaque?.checked || false;
     const precoMin = parseFloat(filtroPrecoMin?.value) || 0;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filtros = [filtroCategoria, filtroDestaque, filtroPrecoMin, filtroPrecoMax, filtroBusca];
   filtros.forEach(el => {
     if (el) {
-      el.addEventListener("input", aplicarFiltros);
+      el.addEventListener("input", aplicarFiltrosExternos);
     }
   });
 });
