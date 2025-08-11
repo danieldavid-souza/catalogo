@@ -24,6 +24,7 @@ fetch("./js/produtos.json")
   .then(res => res.json())
   .then(produtos => {
     todosProdutos = produtos;
+     window.todosProdutos = todosProdutos; // ✅ Agora com os dados reais
     gerarCategorias(produtos); // gera opções únicas de categoria
     aplicarFiltros();          // aplica filtros iniciais
   });
