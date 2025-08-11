@@ -152,3 +152,5 @@ document.addEventListener("keydown", function (e) {
       break;
   }
 });
+window.todosProdutos = todosProdutos;
+window.renderizarProdutos = renderizarProdutos;
