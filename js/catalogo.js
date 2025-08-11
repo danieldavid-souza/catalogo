@@ -15,6 +15,7 @@ const numeroWhatsApp = "5532991657472";
 
 // 🔹 Variáveis globais
 let todosProdutos = []; // armazena todos os produtos carregados
+window.todosProdutos = todosProdutos; // ✅ agora com os dados reais
 let imagens = [];       // imagens para o lightbox
 let imagemAtual = 0;    // índice da imagem atual no lightbox
 
@@ -90,6 +91,7 @@ function renderizarProdutos(produtos) {
     imagens.push({ src: produto.imagem, alt: produto.nome });
   });
 }
+window.renderizarProdutos = renderizarProdutos;
 
 /* 🧪 Eventos de filtro – atualiza catálogo em tempo real */
 [
@@ -152,5 +154,3 @@ document.addEventListener("keydown", function (e) {
       break;
   }
 });
-window.todosProdutos = todosProdutos;
-window.renderizarProdutos = renderizarProdutos;
