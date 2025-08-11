@@ -54,16 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* 🔁 Adiciona eventos aos filtros para atualizar em tempo real */
-  [
-    filtroCategoria,
-    filtroDestaque,
-    filtroPrecoMin,
-    filtroPrecoMax,
-    filtroBusca
-  ];
-   forEach(el => {
-   if (el) {
-      el.addEventListener("input", aplicarFiltros);
-   }
+  const filtros = [
+  filtroCategoria,
+  filtroDestaque,
+  filtroPrecoMin,
+  filtroPrecoMax,
+  filtroBusca
+];
+
+filtros.forEach(el => {
+  if (el) {
+    el.addEventListener("input", aplicarFiltros);
+  }
+});
   });
 });
