@@ -34,7 +34,8 @@ fetch("./js/produtos.json")
         <!-- Botão do WhatsApp com ícone e mensagem dinâmica -->
         <a href="${urlWhatsApp}" class="whatsapp-btn" target="_blank">
           <div class="whatsapp-content">
-          <img src="./assets/icones/whatsapp2.png" alt="WhatsApp" />
+          <!--<img src="./assets/icones/whatsapp2.png" alt="WhatsApp" />-->
+          <img src="https://danieldavid-souza.github.io/catalogo/assets/icones/whatsapp2.png" alt="WhatsApp" style="width:32px;" />
           <span>Fale no WhatsApp</span>
           </div>
         </a>
