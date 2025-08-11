@@ -80,7 +80,7 @@ function renderizarProdutos(produtos) {
       <span class="preco">R$ ${produto.preco.toFixed(2)}</span>
       <a href="${urlWhatsApp}" class="whatsapp-btn" target="_blank">
         <div class="whatsapp-content">
-          <img src="../assets/icones/whatsapp.png" alt="WhatsApp" />
+          <img src="./assets/icones/whatsapp.png" alt="WhatsApp" />
           <span>Fale no WhatsApp</span>
         </div>
       </a>
