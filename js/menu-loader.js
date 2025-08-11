@@ -2,12 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("menu-container");
 
   // 🧭 Obtém o nome da página atual (sem extensão .html)
-  //const paginaAtual = window.location.pathname.split("/").pop().replace(".html", "");
-  //==================================================================================//
-  let paginaAtual = window.location.pathname.split("/").pop().replace(".html", "");
-  if (paginaAtual === "" || paginaAtual === "index") {
-    paginaAtual = "produtos"; // Trata index.html como produtos
-  }
+  const paginaAtual = window.location.pathname.split("/").pop().replace(".html", "");
 
   // 📦 Carrega o conteúdo do menu externo
   fetch("menu.html")
