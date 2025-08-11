@@ -60,7 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     filtroPrecoMin,
     filtroPrecoMax,
     filtroBusca
-  ].forEach(el => {
-    el.addEventListener("input", aplicarFiltros);
+  ];
+   forEach(el => {
+   if (el) {
+      el.addEventListener("input", aplicarFiltros);
+   }
   });
 });
